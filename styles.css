@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1a2d;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 88%;
+    max-width: 327px;
+    min-height: 543px;
+    background-color: #15273f;
+    padding: 24px 24px;
+    font-family: 'Outfit', sans-serif;
+    border-radius: 15px;
+}
+
+picture {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    border-radius: 10px;
+}
+
+.premier {
+    width: 100%;
+    border-radius: 10px;
+    grid-area: 1 / 1;
+}
+
+.overlay {
+    background-color: rgba(41, 255, 255, 50%);
+    border-radius: 10px;
+    grid-area: 1 / 1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.25s ease;
+}
+
+.icon {
+    grid-area: 1 / 1;
+    align-self: center;
+    justify-self: center;
+}
+
+picture:hover {
+    cursor: pointer;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+h2 {
+    color: white;
+    font-weight: 600;
+}
+
+h2:hover {
+    color: #29ffff;
+    cursor: pointer;
+}
+
+.bio {
+    color: #8ca0c1;
+    font-weight: 300;
+}
+
+.prix {
+    color: #29ffff;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.mini_cont {
+    display: flex;
+    border-bottom: 1px solid #2e4058;
+    justify-content: space-between;
+}
+
+.eth, .cont_jours {
+    display: flex;
+    border 1px solid white;
+    align-items: center;
+}
+
+.jours {
+    color: #8baad8;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.deuxieme {
+    width: 33px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.auteur {
+    color: #8ca0c1;
+    font-weight: 300;
+    padding-left: 15px;
+}
+
+.nom {
+    color: white;
+    font-weight: 300;
+}
+
+.nom:hover {
+    color: #29ffff;
+    cursor: pointer;
+}
